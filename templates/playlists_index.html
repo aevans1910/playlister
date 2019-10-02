@@ -7,6 +7,7 @@
 
     {% for playlist in playlists %}
         <h2>{{ playlist.title }}</h2>
-        <small>{{ playlist.description }}</small>
+        <small><a href='/playlists/{{ playlist._id }}'>{{ playlist.title }} </a></small>
+        <small> {{ playlist.description }} </small>
     {% endfor %}
 {% endblock %}
